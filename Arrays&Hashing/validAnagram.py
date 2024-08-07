@@ -1,22 +1,15 @@
-# Traver on string forward and the other backwards
-# if 
+# Given 2 strings, return true if they are an anagram of each other and false otherswise
+
+# Sorted both
+# Traversed the first one and check if char at "i" was the same in the second one
 
 class Solution:
     def isAnagram(self, s, t) -> bool:
-        print("test")
-
-
-        sortedS = "".join(sorted(s))
-        sortedT = "".join(sorted(t))
-
-        left = 0
-        right = len(s)
-
-        
-
-
-
+        return sorted(s) == sorted(t)
     
+solution = Solution()
 
-    isAnagram("anagram", "nagaram")
-    isAnagram("rat", "car")
+solution.isAnagram("anagram", "nagaram")
+solution.isAnagram("rat", "car")
+
+print("end")

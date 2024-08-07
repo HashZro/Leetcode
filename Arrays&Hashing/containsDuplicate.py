@@ -2,8 +2,8 @@
 # if any any point the value is already in the hashset, return true
 # Return false by default, after ther loop
 
-# Time O(n)
-# Space O(n)
+# Time O(n) = Traverse only one time
+# Space O(n) = Can create a hashset up to the array size
 
 
 class Solution:
@@ -12,13 +12,9 @@ class Solution:
 
         for number in nums:
             if number in my_set:
-                print("True")
-                
                 return True
-            else:
-                my_set.add(number)
+            my_set.add(number)
 
-        print("False")
         return False
     
 test = Solution()
